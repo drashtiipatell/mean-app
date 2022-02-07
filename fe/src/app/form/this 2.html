@@ -1,0 +1,45 @@
+
+<div class="container">
+<form #serviceForm="ngForm" (ngSubmit)="onSubmit()">
+  <div class="form-row" style="justify-content: inline;">
+    <div class="form-group col-md-5">
+      <label for="inputName">Name</label>
+      <input type="text" class="form-control" placeholder="Name" name="
+      name" [(ngModel)]="service.name">
+    </div>
+    <div class="form-group col-md-5">
+      <label for="inputEmail4">Email</label>
+      <input type="email" class="form-control" placeholder="Email" name="
+      email" [(ngModel)]="service.email">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputAddress">Location</label>
+    <input type="text" class="form-control"  placeholder="Location" name="
+    location" [(ngModel)]="service.location">
+  </div>
+  <div class="form-group">
+    <label for="inputContact">Contact</label>
+    <input type="text" class="form-control"  placeholder="Connect me" name="
+    contact" [(ngModel)]="service.contact">
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputTime">Time</label>
+      <input type="text" class="form-control" placeholder="Time" name="
+      time" [(ngModel)]="service.time" >
+    </div>
+   
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-12">
+      <label for="inputServices">Services</label>
+      <input type="text" class="form-control" placeholder="Services" name="
+      services" [(ngModel)]="service.service">
+    </div>
+  </div>
+  
+  <button style="margin-top: 2em;" type="submit" class="btn btn-primary">Add</button>
+</form>
+
+</div>

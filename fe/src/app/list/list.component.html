@@ -1,0 +1,20 @@
+
+<div class="container">
+    <div class="row" style="margin-top: 1em;">
+         <div class="row" *ngFor="let x of services" style="border:2px solid lightgray; width:70vw; margin-left:10vw;margin-top: 1em;box-shadow: 1px gray;border-radius: 1em;">
+          <div class="row"><h4 style="color:deepskyblue;"><u>{{ x.name }}</u></h4></div>
+          <div class="row">
+            <div class="col-12 col-lg-4" style="justify-content: center;align-items: center;padding: 10px;text-align: center;"><b>Call</b> : {{x.contact}}</div>
+            
+            <div class="col-12 col-lg-4" style="justify-content: center;align-items: center;padding: 10px;text-align: center;"><b>Mail</b> :{{x.email}}</div>
+            <div class="col-12 col-lg-4" style="justify-content: center;align-items: center;padding: 10px;text-align: center;"><b>Time</b> :{{x.time}}</div>
+            </div>
+
+
+            <div class="row"style="justify-content: center;align-items: center;padding: 10px;text-align: center; width:66vw; "><b>Location:</b>  {{x.location}}</div>
+            
+            <div class="row"style="justify-content: center;align-items: center;padding: 10px;text-align: center; width:66vw; ">{{x.service}}</div>
+              
+            </div> 
+        </div>
+  </div>
